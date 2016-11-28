@@ -6,21 +6,41 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="box">
-		<header>
+	<header>
 			<img id="logo" src="src/img/logo.png" alt="Mira">
-		</header>
-		<main>
-			<h1>Mobile Powered, Tabletop AR.</h1>
-			<p>Enabling everyone to innovate in an entirely new medium that will fully unleash people's creativity and imagination. Enabling everyone to innovate in an entirely new medium.</p>
-			<h2>Start developing for tomorrow, today.</h2>
-			<hr>
-			<h3>Stay in Touch</h3>
-			<input id="email" type="text" placeholder="Enter your email">
-			<button id="submit" type="submit"></button>
-			<!-- <hr>
-			<button id="apply" type="submit">Apply for Developer Kit</button> -->
-		</main>
-	</div>
+			<h2>AR for Anyone</h2>
+	</header>
+	<main>
+		<h1>True Augmented Reality, <br>Powered by Your Smartphone.</h1>
+		<hr>
+		<p>Building the most accessible headset<br> to bring true augmented reality to the<br> home, office, and classroom.</p>
+		<h2>Start developing for tomorrow, today.</h2>
+		<hr>
+		<button id="updates" type="submit">Get Mira Updates</button>
+		<script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+		<script type="text/javascript">
+			function mailChimp() {
+				console.log('MailChimp');
+				require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"d7d782c46044b4ae868e25ea3","lid":"2d52594514"}) })
+			}
+
+			document.getElementById("updates").onclick = function() {mailChimp()};
+		</script>
+
+		<hr>
+		<p>Coming soon to<br>
+		<img id="kickstarter" src="src/img/kickstarter.png" alt="Kickstarter"></p>
+
+		<!-- <input id="email" type="text" placeholder="Enter your email">
+		<button id="submit" type="submit"></button> -->
+		<!-- <hr>
+		<button id="apply" type="submit">Apply for Developer Kit</button> -->
+
+		<div id="social">
+			<a href="http://www.facebook.com/MiraLabs.io" target="_blank"><img src="src/img/facebook.png" alt="Facebook"></a>
+			<a href="https://twitter.com/miralabs" target="_blank"><img src="src/img/twitter.png" alt="Twitter"></a>
+			<a href="info@miralabs.io"><img src="src/img/email.png" alt="Email"></a>
+		</div>
+	</main>
 </body>
 </html>
